@@ -50,6 +50,9 @@ private:
     static constexpr float FORWARD_SPEED = 0.3;      // meters/second
     static constexpr float BACKWARD_SPEED = -0.3;    // meters/second
     static constexpr float TURN_SPEED = 0.2;         // radians/second
+
+    int turn_direction_ = 1; 
+    double turn_dir_multiplier_; 
 };
 }  // namespace fsm_bumpgo_cpp
 
