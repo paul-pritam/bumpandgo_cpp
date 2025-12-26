@@ -12,7 +12,7 @@ BumpGoNode::BumpGoNode() : Node("bumpgo_node"), state_(FORWARD)
     timer_= create_wall_timer(50ms, std::bind(&BumpGoNode::control_cycle, this));
     state_ts_=now();
     
-    // Minimal Change: Initialize a multiplier for turning direction
+    // Initialize a multiplier for turning direction
     // 1.0 = Left, -1.0 = Right
     turn_dir_multiplier_ = 1.0; 
 }
