@@ -4,7 +4,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
     bumpgo_cmd = Node(
         package='fsm_bumpgo_cpp',
-        executable='bumpgo',
+        executable='bumpgo_node_exe',
         output='screen',
         parameters=[{
             'use_sim_time': True

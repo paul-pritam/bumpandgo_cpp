@@ -31,13 +31,13 @@ add_library(${PROJECT_NAME} SHARED
 
 ament_target_dependencies(${PROJECT_NAME} ${dependencies})
 
-add_executable(bumpgo src/bumpgo_main.cpp)
-ament_target_dependencies(bumpgo ${dependencies})
-target_link_libraries(bumpgo ${PROJECT_NAME})
+add_executable(bumpgo_node_exe src/bumpgo_main.cpp)
+ament_target_dependencies(bumpgo_node_exe ${dependencies})
+target_link_libraries(bumpgo_node_exe ${PROJECT_NAME})
 
 install(TARGETS
   ${PROJECT_NAME}
-  bumpgo
+  bumpgo_node_exe
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION lib/${PROJECT_NAME}
