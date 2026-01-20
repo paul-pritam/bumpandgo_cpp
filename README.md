@@ -276,7 +276,7 @@ colcon test --packages-select fsm_bumpgo_cpp
 
 ## License
 
-Apache License 2.0 - See LICENSE file for detailss
+Apache License 2.0 - See LICENSE file for details
 
 ## Maintainer
 
